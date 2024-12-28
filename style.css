@@ -1,0 +1,71 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;  
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   min-height: 100dvh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: azure;
+}
+
+.container {
+   text-align: center;
+   width: 100%;
+   max-width: 800px;
+   border-radius: 10px;
+   padding: 20px;
+    
+   #launchDate {
+      color: gray;
+      padding: 20px;
+   }
+
+   .block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+     
+      div {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100px;
+         height: 100px;
+         border: 3px solid orange;
+         border-radius: 10px;
+         font-size: 24px; 
+         font-weight: bold;
+         position: relative;
+         &::after {
+            content: "qwe";
+            position: absolute;
+            bottom: -30px;
+            font-size: 20px;
+            font-weight: 500;
+            color: gray;
+         }
+
+         &:nth-child(1)::after {
+            content: "Days";
+         }
+
+         &:nth-child(2)::after {
+            content: "Hours";
+         }
+
+         &:nth-child(3)::after {
+            content: "Minutes";
+         }
+
+         &:nth-child(4)::after {
+            content: "Seconds";
+         }
+      }
+   }
+}
