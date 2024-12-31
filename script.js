@@ -1,6 +1,6 @@
 
 const launchDateDisplay = document.querySelector("#launchDate");
-const launchDate = "31 Dec 2024 12:00 AM";
+const launchDate = "1 Jan 2024 12:00 AM";
 
 launchDateDisplay.innerHTML = launchDate;
 const divs = document.querySelectorAll(".block > div");
